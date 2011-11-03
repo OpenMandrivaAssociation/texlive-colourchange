@@ -1,3 +1,9 @@
+# revision 21741
+# category Package
+# catalog-ctan /macros/latex/contrib/colourchange
+# catalog-date 2011-03-16 12:04:55 +0100
+# catalog-license gpl3
+# catalog-version 1.22
 Name:		texlive-colourchange
 Version:	1.22
 Release:	1
@@ -43,6 +49,7 @@ through the presentation you are.
 %doc %{_texmfdistdir}/doc/latex/colourchange/README
 %doc %{_texmfdistdir}/doc/latex/colourchange/colourchangedoc.pdf
 %doc %{_texmfdistdir}/doc/latex/colourchange/colourchangedoc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ through the presentation you are.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
