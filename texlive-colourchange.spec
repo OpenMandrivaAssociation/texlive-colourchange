@@ -50,3 +50,17 @@ through the presentation you are.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.22-2
++ Revision: 750379
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.22-1
++ Revision: 718102
+- texlive-colourchange
+- texlive-colourchange
+- texlive-colourchange
+- texlive-colourchange
+
