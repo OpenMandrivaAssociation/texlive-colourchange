@@ -6,7 +6,7 @@
 # catalog-version 1.22
 Name:		texlive-colourchange
 Version:	1.22
-Release:	11
+Release:	12
 Summary:	colourchange
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colourchange
