@@ -1,18 +1,12 @@
-# revision 21741
-# category Package
-# catalog-ctan /macros/latex/contrib/colourchange
-# catalog-date 2011-03-16 12:04:55 +0100
-# catalog-license gpl3
-# catalog-version 1.22
 Name:		texlive-colourchange
-Version:	1.22
-Release:	12
+Version:	21741
+Release:	1
 Summary:	colourchange
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colourchange
 License:	GPL3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colourchange.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colourchange.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colourchange.r21741.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colourchange.doc.r21741.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ change from one colour to another as a function of how far
 through the presentation you are.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,24 +37,10 @@ through the presentation you are.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.22-2
-+ Revision: 750379
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.22-1
-+ Revision: 718102
-- texlive-colourchange
-- texlive-colourchange
-- texlive-colourchange
-- texlive-colourchange
-
