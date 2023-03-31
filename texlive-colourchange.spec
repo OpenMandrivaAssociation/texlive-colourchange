@@ -1,6 +1,6 @@
 Name:		texlive-colourchange
 Version:	21741
-Release:	1
+Release:	2
 Summary:	colourchange
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colourchange
